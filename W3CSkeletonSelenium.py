@@ -105,10 +105,6 @@ if region != 'EU':
         command_executor='http://'+os.environ['SAUCE_USERNAME']+':' +
         os.environ['SAUCE_ACCESS_KEY']+'@ondemand.saucelabs.com:/wd/hub',
         desired_capabilities=sauceParameters)
-    # driver = webdriver.Remote(
-    #     command_executor='http://aleks.shineleva:daead52a-4252-480e-a8a5-fc0300e493a9@ondemand.saucelabs.com:80/wd/hub',
-    #     desired_capabilities=sauceParameters)
-elif region == 'EU':
     print("You are using the EU data center")
     driver = webdriver.Remote(
         command_executor='https://'+os.environ['SAUCE_USERNAME']+':' +
